@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__header header">
+        <nav class="header__navigation">
+          <a href="/"><i class="icon-logo"></i></a>
+          <button class="header__button"><i class="icon-hamburger"></i></button>
+          <ul class="menu">
+            <li class="menu__item"><a href="/" class="menu__link">About</a></li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">Services</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link menu__link--btn">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <div class="header__title">
+            <h1>We are creatives</h1>
+          </div>
+          <div class="header__arrow">
+            <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+              <g
+                stroke="#FFF"
+                stroke-width="6"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 3v100M3 95.484l15 15 15-15" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper__main">
+        <div class="group group--tranform">
+          <div class="group__image"></div>
+          <div class="group__info">
+            <h3 class="group__title">Transform your brand</h3>
+            <p class="group__description">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <div class="group__btn-container">
+              <a href="/" class="group__btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="group group--standout">
+          <div class="group__image"></div>
+          <div class="group__info">
+            <h3 class="group__title">Stand out to the right audience</h3>
+            <p class="group__description">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <div class="group__btn-container">
+              <a href="/" class="group__btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="group group--design">
+            <div class="group__image group__image--design">
+              <h3 class="group__title">Graphic Design</h3>
+              <p class="group__description">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
+          </div>
+          <div class="group group--photography">
+            <div class="group__image group__image--photography">
+              <h3 class="group__title">Photography</h3>
+              <p class="group__description">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-testimonials">
+          <h3 class="card-testimonials__title">Client testimonials</h3>
+          <div class="card-testimonials__body">
+            <div class="card-testimonials__review client">
+              <div class="client_avatar">
+                <img src="./images/image-emily.jpg" alt="client avatar" />
+              </div>
+              <p class="client_text">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <ul class="client_about">
+                <li class="client__name">Emily R.</li>
+                <li class="client__job">Marketing Director</li>
+              </ul>
+            </div>
+            <div class="card-testimonials__review client">
+              <div class="client_avatar">
+                <img src="./images/image-thomas.jpg" alt="client avatar" />
+              </div>
+              <p class="client_text">
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <ul class="client_about">
+                <li class="client__name">Thomas S.</li>
+                <li class="client__job">Chief Operating Officer</li>
+              </ul>
+            </div>
+            <div class="card-testimonials__review client">
+              <div class="client_avatar">
+                <img src="./images/image-jennie.jpg" alt="client avatar" />
+              </div>
+              <p class="client_text">
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <ul class="client_about">
+                <li class="client__name">Jennie F.</li>
+                <li class="client__job">Business Owner</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="images-container">
+          <div class="images-container__item"></div>
+          <div class="images-container__item"></div>
+          <div class="images-container__item"></div>
+          <div class="images-container__item"></div>
+        </div>
+      </div>
+      <div class="wrapper__footer footer">
+        <div class="footer__logo"><i class="icon-logo"></i></div>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a href="/" class="footer__menu-link">About</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/" class="footer__menu-link">Services</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/" class="footer__menu-link">Projects</a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="/" class="socials__link"
+              ><i class="socials__icon icon-facebook"></i
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a href="/" class="socials__link"
+              ><i class="socials__icon icon-instagram"></i
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a href="/" class="socials__link"
+              ><i class="socials__icon icon-twitter"></i
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a href="/" class="socials__link"
+              ><i class="socials__icon icon-pinterest"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
