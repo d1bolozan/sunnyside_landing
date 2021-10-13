@@ -797,8 +797,8 @@ img {
 }
 @media (min-width: 1024px) {
   .wrapper__main {
-    -ms-grid-rows: 1fr 1fr 1fr 1.3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1.3fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1.2fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr 1.2fr 0.8fr;
   }
 
   .group {
