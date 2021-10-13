@@ -203,12 +203,14 @@ img {
 }
 .header__navigation .icon-logo {
   color: #fff;
+  font-size: 30px;
 }
 .header__button {
   background: transparent;
 }
 .header__button .icon-hamburger {
   color: white;
+  font-size: 30px;
 }
 .header__content {
   height: 70%;
