@@ -4,9 +4,8 @@
 
 $fontBarlow: "Barlow", sans-serif;
 $fontFraunces: "Fraunces", serif;
-$descBtnColor: hsl(7, 99%, 70%);
+$descBtnColor: hsl(0, 0%, 100%);
 $mobileBtnColor: hsl(51, 100%, 49%);
-$descHoverBtnColor: hsl(7, 99%, 75%);
 $mobileHoverBtnColor: hsl(51, 100%, 70%);
 $menuBtnHoverColor: hsl(193, 96%, 73%);
 $white: hsl(0, 0%, 100%);
@@ -259,13 +258,13 @@ img {
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
-            padding: 0 15px 80px 15px;
+            padding: 0 15px;
             & .group__title {
                 justify-self: flex-end;
             }
             & .group__description {
                 flex: 0 1 30%;
-                padding: 20px 0 0 0;
+                padding: 20px 0;
                 word-wrap: break-word;
             }
         }
@@ -322,7 +321,7 @@ img {
     &:last-child {
         margin-bottom: 0;
     }
-    &_avatar {
+    &__avatar {
         flex: 1 1 100%;
         border-radius: 50%;
         width: 80px;
@@ -335,7 +334,7 @@ img {
         }
     }
 
-    &_text {
+    &__text {
         flex: 1 1 100%;
         font-family: $fontBarlow;
         color: $testimonialTextColor;
@@ -344,7 +343,7 @@ img {
         padding: 40px 0;
     }
 
-    &_about {
+    &__about {
         flex: 1 1 100%;
         text-align: center;
     }
@@ -466,12 +465,15 @@ img {
         &--photography &__image {
             background-image: url(images/desktop/image-photography.jpg) !important;
         }
+        &--tranform {
+            flex-direction: row-reverse !important;
+        }
     }
 }
 @media (min-width: 541px) {
     .wrapper {
         &__main {
-            grid-template-rows: 0.5fr 0.5fr 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
         }
     }
     .group {
@@ -480,19 +482,23 @@ img {
     .container {
         flex-direction: row;
     }
+    .client__text {
+        max-width: 60%;
+    }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .wrapper {
         &__header {
             background-image: url(images/desktop/image-header.jpg);
         }
         &__main {
-            grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+            grid-template-rows: 1.5fr 1.5fr 1.5fr 2fr 1fr;
         }
     }
     .group {
         &__info {
             justify-content: center;
+            align-items: start;
         }
         &--tranform {
             flex-direction: row-reverse;
@@ -510,8 +516,107 @@ img {
         }
         &__description,
         &__title,
-        &__btn-container{
-            width: 80%;
+        &__btn-container {
+            word-break: break-word;
+            max-width: 90%;
+            padding: 20px 10px;
         }
+        &__title {
+        }
+    }
+    .images-container {
+        flex-direction: row;
+        &__item {
+            flex: 1 1 25%;
+        }
+    }
+    .card-testimonials__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+    .client {
+        height: 100%;
+        margin: 0;
+        flex: 0 0 33.333%;
+        &__text {
+            max-width: 80%;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .wrapper__main{
+        grid-template-rows: 1fr 1fr 1fr 1.3fr 1fr;
+    }
+    .group {
+        min-height: 600px;
+        &:first-child{
+            &__title{
+                padding-right: 150px;
+            }
+        }
+        &__description,
+        &__title,
+        &__btn-container {
+            max-width: 90%;
+        }
+    }
+    .header__button{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        position: unset;
+        background-color: transparent;
+        &::after{
+            display: none;
+        }
+        &__item{
+            padding: 0 25px;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+        &__link{
+            color: $white;
+            transition: all .3s ease-in-out 0s;
+            &--btn{
+                color: $titleColor;
+                background-color: $descBtnColor;
+                &:hover{
+                    background-color: $menuBtnHoverColor;
+                }
+            }
+        }
+        &__link:hover{
+            color: $white;
+            transition: all .3s ease-in-out 0s;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .group {
+        &__info{
+            padding-left: 50px;
+        }
+        &__description,
+        &__btn-container {
+            max-width: 66%;
+        }
+        &__title{
+            max-width: 50%;
+            padding-right: 15px;
+        }
+    }
+    .card-testimonials{
+        justify-content: space-evenly;
+    }
+    .client{
+        flex: 0 0 30%;
     }
 }
