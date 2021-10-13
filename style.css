@@ -339,16 +339,16 @@ img {
           flex-direction: column;
 }
 .group--tranform .group__image {
-  background-image: url(./images/mobile/image-transform.jpg);
+  background-image: url(images/mobile/image-transform.jpg);
 }
 .group--standout .group__image {
-  background-image: url(./images/mobile/image-stand-out.jpg);
+  background-image: url(images/mobile/image-stand-out.jpg);
 }
 .group--design .group__image {
-  background-image: url(./images/mobile/image-graphic-design.jpg);
+  background-image: url(images/mobile/image-graphic-design.jpg);
 }
 .group--photography .group__image {
-  background-image: url(./images/mobile/image-photography.jpg);
+  background-image: url(images/mobile/image-photography.jpg);
 }
 .group__image {
   -webkit-box-flex: 1;
@@ -581,16 +581,16 @@ img {
   background-repeat: no-repeat;
 }
 .images-container__item:nth-child(1) {
-  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+  background-image: url(images/desktop/image-gallery-milkbottles.jpg);
 }
 .images-container__item:nth-child(2) {
-  background-image: url(./images/desktop/image-gallery-orange.jpg);
+  background-image: url(images/desktop/image-gallery-orange.jpg);
 }
 .images-container__item:nth-child(3) {
-  background-image: url(./images/desktop/image-gallery-cone.jpg);
+  background-image: url(images/desktop/image-gallery-cone.jpg);
 }
 .images-container__item:nth-child(4) {
-  background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+  background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
 }
 
 .footer {
@@ -676,16 +676,16 @@ img {
 
 @media (min-width: 426px) {
   .group--tranform .group__image {
-    background-image: url(./images/desktop/image-transform.jpg) !important;
+    background-image: url(images/desktop/image-transform.jpg) !important;
   }
   .group--standout .group__image {
-    background-image: url(./images/desktop/image-stand-out.jpg) !important;
+    background-image: url(images/desktop/image-stand-out.jpg) !important;
   }
   .group--design .group__image {
-    background-image: url(./images/desktop/image-graphic-design.jpg) !important;
+    background-image: url(images/desktop/image-graphic-design.jpg) !important;
   }
   .group--photography .group__image {
-    background-image: url(./images/desktop/image-photography.jpg) !important;
+    background-image: url(images/desktop/image-photography.jpg) !important;
   }
 }
 @media (min-width: 541px) {
@@ -710,7 +710,7 @@ img {
 }
 @media (min-width: 768px) {
   .wrapper__header {
-    background-image: url(./images/desktop/image-header.jpg);
+    background-image: url(images/desktop/image-header.jpg);
   }
   .wrapper__main {
     -ms-grid-rows: 1fr 1fr 1fr 2fr 1fr;

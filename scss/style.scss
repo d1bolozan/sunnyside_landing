@@ -169,19 +169,19 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     &--tranform &__image {
-        background-image: url(./images/mobile/image-transform.jpg);
+        background-image: url(images/mobile/image-transform.jpg);
     }
 
     &--standout &__image {
-        background-image: url(./images/mobile/image-stand-out.jpg);
+        background-image: url(images/mobile/image-stand-out.jpg);
     }
 
     &--design &__image {
-        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-image: url(images/mobile/image-graphic-design.jpg);
     }
 
     &--photography &__image {
-        background-image: url(./images/mobile/image-photography.jpg);
+        background-image: url(images/mobile/image-photography.jpg);
     }
     &__image {
         flex: 1 0 50%;
@@ -369,16 +369,16 @@ img {
         background-size: cover;
         background-repeat: no-repeat;
         &:nth-child(1) {
-            background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+            background-image: url(images/desktop/image-gallery-milkbottles.jpg);
         }
         &:nth-child(2) {
-            background-image: url(./images/desktop/image-gallery-orange.jpg);
+            background-image: url(images/desktop/image-gallery-orange.jpg);
         }
         &:nth-child(3) {
-            background-image: url(./images/desktop/image-gallery-cone.jpg);
+            background-image: url(images/desktop/image-gallery-cone.jpg);
         }
         &:nth-child(4) {
-            background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+            background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
         }
     }
 }
@@ -450,19 +450,19 @@ img {
 @media (min-width: 426px) {
     .group {
         &--tranform &__image {
-            background-image: url(./images/desktop/image-transform.jpg) !important;
+            background-image: url(images/desktop/image-transform.jpg) !important;
         }
 
         &--standout &__image {
-            background-image: url(./images/desktop/image-stand-out.jpg) !important;
+            background-image: url(images/desktop/image-stand-out.jpg) !important;
         }
 
         &--design &__image {
-            background-image: url(./images/desktop/image-graphic-design.jpg) !important;
+            background-image: url(images/desktop/image-graphic-design.jpg) !important;
         }
 
         &--photography &__image {
-            background-image: url(./images/desktop/image-photography.jpg) !important;
+            background-image: url(images/desktop/image-photography.jpg) !important;
         }
     }
 }
@@ -482,7 +482,7 @@ img {
 @media (min-width: 768px) {
     .wrapper {
         &__header {
-            background-image: url(./images/desktop/image-header.jpg);
+            background-image: url(images/desktop/image-header.jpg);
         }
         &__main {
             grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
